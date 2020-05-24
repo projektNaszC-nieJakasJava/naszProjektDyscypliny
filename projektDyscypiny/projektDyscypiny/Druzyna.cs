@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projektDyscypiny
 {
-    class Druzyna
+    public class Druzyna
     {
         private int idDruzyna;
         private String nazwaDruzyny = "";
