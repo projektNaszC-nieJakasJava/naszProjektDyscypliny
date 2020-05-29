@@ -23,6 +23,8 @@ namespace projektDyscypiny
     {
         List<Sedzia> listaSedziow = new List<Sedzia>();
         List<Druzyna> listaDruzyna = new List<Druzyna>();
+        List<Mecz> listaMeczow = new List<Mecz>();
+        Random random = new Random();
         public PrzeciaganieLiny()
         {
             InitializeComponent();
@@ -51,7 +53,7 @@ namespace projektDyscypiny
             }
             try
             {
-                using (StreamReader streamR = new StreamReader("SiatkowkaDruzynaDane.txt"))
+                using (StreamReader streamR = new StreamReader("PrzeciaganieLinyDruzynaDane.txt"))
                 {
                     string linia;
                     while ((linia = streamR.ReadLine()) != null)
@@ -83,7 +85,7 @@ namespace projektDyscypiny
         {
             if (listaSedziow.Count >=1 && listaDruzyna.Count >= 4)
             {
-                ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejSiatkowka();
+                ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejPrzeciaganieLiny();
             }
             else
             {
@@ -124,7 +126,7 @@ namespace projektDyscypiny
             {
                 Sedzia sedzia = new Sedzia(imie, nazwisko, id);
 
-                using (StreamWriter streamW = new StreamWriter(("SiatkowkaSedziaDane.txt"), true))
+                using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinySedziaDane.txt"), true))
                 {
                     streamW.WriteLine(sedzia.getImie_Sedzia() + ";" + sedzia.getNazwisko_Sedzia() + ";" + sedzia.getID_Sedzia());
                 }
@@ -179,9 +181,9 @@ namespace projektDyscypiny
                             UsuwanieSedziegoTextBox.Text = "";
                             UsuwanieSedziegoTextBox.Text = "";
                             MessageBox.Show("Usunięto sędziego");
-                            File.WriteAllText("SiatkowkaSedziaDane.txt", string.Empty);   // Czyszczenie pliku
+                            File.WriteAllText("PrzeciaganieLinySedziaDane.txt", string.Empty);   // Czyszczenie pliku
 
-                            using (StreamWriter streamW = new StreamWriter(("SiatkowkaSedziaDane.txt"), true))
+                            using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinySedziaDane.txt"), true))
                                 foreach (Sedzia sedzia1 in listaSedziow)
                                 {
                                     streamW.WriteLine(sedzia1.getImie_Sedzia() + ";" + sedzia1.getNazwisko_Sedzia() + ";" + sedzia1.getID_Sedzia());
@@ -270,7 +272,7 @@ namespace projektDyscypiny
             {
                 Druzyna druzyna = new Druzyna(nazwa, id);
 
-                using (StreamWriter streamW = new StreamWriter(("SiatkowkaDruzynaDane.txt"), true))
+                using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyDruzynaDane.txt"), true))
                 {
                     streamW.WriteLine(druzyna.getNazwaDruzyny() + ";" + druzyna.getID_Druzyna());
                 }
@@ -319,8 +321,8 @@ namespace projektDyscypiny
                             listaDruzyna.Remove(druzyna);
                             WycofanieDruzynyTextBox.Text = "";
                             MessageBox.Show("Wycofano drużyne");
-                            File.WriteAllText("SiatkowkaDruzynaDane.txt", string.Empty);  //czyszczenie
-                            using (StreamWriter streamW = new StreamWriter(("SiatkowkaDruzynaDane.txt"), true))
+                            File.WriteAllText("PrzeciaganieLinyDruzynaDane.txt", string.Empty);  //czyszczenie
+                            using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyDruzynaDane.txt"), true))
                                 foreach (Druzyna druzyna1 in listaDruzyna)
                                 {
 
@@ -379,6 +381,15 @@ namespace projektDyscypiny
                     DruzynaIDTextBox.Text = "";
                 }
             }
+        }
+        public void losowanieDruzyn(List<Druzyna> druzyny, List<Sedzia> sedziowie)
+        {
+            for (int i = 0; i < druzyny.Count - 1; i++)
+                for (int j = 1; j < druzyny.Count - 1; j++)
+                {
+                    int indexSedziego = random.Next(sedziowie.Count - 1); //losowanie indexu sedziego
+                    listaMeczow.Add(new Mecz(druzyny[i], druzyny[j], sedziowie[indexSedziego]));
+                }
         }
     }
 }

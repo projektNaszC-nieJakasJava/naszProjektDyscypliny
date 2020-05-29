@@ -21,47 +21,7 @@
                 <SolidColorBrush Color="#f5e7ca" Opacity="0.3" />
             </TabControl.Background>
 
-            <TabItem Header="Odczyt danych" BorderBrush="#f5e7ca">
-                <TabItem.Background>
-                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
-                </TabItem.Background>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="3" Width="100" Margin="15" Grid.ColumnSpan="2"  >
-                        <Button.Background>
-                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
-                        </Button.Background>
-                        OK
-                    </Button>
-
-                    <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-
-                        <Label  FontSize="14"  HorizontalAlignment="Center">
-                            Wprowadź nazwę pliku z którego chcesz wczytać dane
-                        </Label>
-                        <Label         FontSize="14" HorizontalAlignment="Center">
-                            (jeśli nie masz go stworzonego, możesz skorzystać z pliku "danePrzeciaganieLiny")
-                        </Label>
-
-                    </StackPanel>
-                    <TextBox Grid.Row="2" Width="200" Height="22">
-
-                    </TextBox>
-
-                </Grid>
-
-
-
-            </TabItem>
-
+            
 
 
 
@@ -112,7 +72,7 @@
 
                             </TextBox>
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button Click="DodajSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -158,7 +118,7 @@
 
 
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
+                            <Button Click="UsunSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -185,11 +145,8 @@
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
 
+
                         <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="52*"/>
-                                <ColumnDefinition Width="737*"/>
-                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -206,16 +163,16 @@
                             </Grid.RowDefinitions>
 
 
-                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="314.881,0.2,366.8,0">
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
                                 Podaj ID
                             </Label>
-                            <TextBox Name="SedziaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="1" Margin="241.881,3,294.8,2.2" >
+                            <TextBox  Name="SedziaIDTextBox"   HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
 
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="291.881,1,344.8,1.4" Grid.Column="1"  >
+                            <Button Click="SzukajSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -352,72 +309,45 @@
 
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-
-
-
-
-
+                                <ColumnDefinition Width="52*"/>
+                                <ColumnDefinition Width="737*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
-
                                 <RowDefinition/>
 
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
-
+                                <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Label Grid.Column="0" HorizontalAlignment="Center" Grid.Row="3">
-                                Podaj ID
-                            </Label>
-                            <TextBox Name="DruzynaIDTextBox" Grid.Column="0" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="299,0.2,344.8,0" Width="93" Content="    Podaj ID"/>
+                            <TextBox Name="DruzynaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="1" Margin="241.881,3,294.8,2.2" >
 
                             </TextBox>
 
 
-                            <Label Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1">
-                                Podaj imie
-                            </Label>
-                            <Label Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4">
-                                Podaj nazwisko
-                            </Label>
 
-                            <TextBox Grid.Column="1" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
-
-                            </TextBox>
-                            <TextBox Grid.Column="1" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
-
-                            </TextBox>
-
-                            <Button Grid.Column="0" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="291.881,1,344.8,1.4" Grid.Column="1"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
                                 Szukaj
                             </Button>
-
-                            <Button Grid.Column="1" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"  >
-                                <Button.Background>
-                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
-                                </Button.Background>
-                                Szukaj
-                            </Button>
-
-
 
 
 
 
                         </Grid>
+
+
                     </TabItem>
 
                 </TabControl>
@@ -469,32 +399,7 @@
 
 
             </TabItem>
-            <TabItem Header="Zapis danych" BorderBrush="#f5e7ca">
-                <TabItem.Background>
-                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
-                </TabItem.Background>
-
-
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="2" Width="150" Margin="15" Grid.ColumnSpan="2"  >
-                        <Button.Background>
-                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
-                        </Button.Background>
-                        Zapisz dane
-                    </Button>
-
-
-
-                </Grid>
-            </TabItem>
+           
 
 
 

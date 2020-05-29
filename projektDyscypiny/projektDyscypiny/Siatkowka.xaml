@@ -21,7 +21,7 @@
                 <SolidColorBrush Color="#f5e7ca" Opacity="0.3" />
             </TabControl.Background>
 
-            
+
 
 
 
@@ -42,6 +42,10 @@
                         </TabItem.Background>
 
                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="67*"/>
+                                <ColumnDefinition Width="722*"/>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -57,22 +61,22 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Label  HorizontalAlignment="Center" Grid.Row="1">
+                            <Label  HorizontalAlignment="Center" Grid.Column="1" Margin="281.38,26,347.8,26.8" Grid.RowSpan="3">
                                 Wprowadź imie
                             </Label>
-                            <TextBox Name="SedziaImie" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
+                            <TextBox Name="SedziaImie" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" Grid.Column="1" Margin="227.38,2.4,294.8,2.8" >
 
                             </TextBox>
 
-                            <Label  HorizontalAlignment="Center" Grid.Row="4">
+                            <Label  HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="268.38,0,334.8,0.2">
                                 Wprowadź nazwisko
                             </Label>
 
-                            <TextBox Name="SedziaNazwisko" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
+                            <TextBox Name="SedziaNazwisko" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" Grid.Column="1" Margin="227.38,1.8,294.8,2.6" >
 
                             </TextBox>
 
-                            <Button Click="DodajSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button Click="DodajSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="277.38,1,344.8,1.4" Grid.Column="1"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -137,10 +141,10 @@
                         </TabItem.Background>
 
                         <StackPanel Name="sedziowieStackPanel">
-                            
-                            
+
+
                         </StackPanel>
-                        
+
                     </TabItem>
 
                     <TabItem Header="szukaj" BorderBrush="#f5e7ca" >
@@ -297,7 +301,7 @@
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
                         <StackPanel Name="druzynyStackPanel">
-                            
+
                         </StackPanel>
                     </TabItem>
 
@@ -349,7 +353,7 @@
                 </TabControl>
 
             </TabItem>
-            
+
             <TabItem Header="Rozegrane turnieje" BorderBrush="#f5e7ca">
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
@@ -357,7 +361,7 @@
 
 
             </TabItem>
-            
+
 
 
 
@@ -383,7 +387,7 @@
 
         </Grid>
 
-     
+
 
 
 
