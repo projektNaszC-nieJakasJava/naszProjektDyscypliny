@@ -99,15 +99,16 @@
                             <Label HorizontalAlignment="Center" Grid.Row="1">
                                 Wprowadź imie
                             </Label>
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
+                            <TextBox Name="SedziaImie" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
 
                             </TextBox>
+
 
                             <Label HorizontalAlignment="Center" Grid.Row="4">
                                 Wprowadź nazwisko
                             </Label>
 
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
+                            <TextBox Name="SedziaNazwisko" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
 
                             </TextBox>
 
@@ -151,7 +152,7 @@
                             <Label HorizontalAlignment="Center" Grid.Row="3">
                                 (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
                             </Label>
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="UsuwanieSedziegoTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
@@ -174,6 +175,10 @@
                         <TabItem.Background>
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
+                        <StackPanel Name="sedziowieStackPanel">
+
+
+                        </StackPanel>
                     </TabItem>
                     <TabItem Header="szukaj" BorderBrush="#f5e7ca" >
                         <TabItem.Background>
@@ -181,6 +186,10 @@
                         </TabItem.Background>
 
                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="52*"/>
+                                <ColumnDefinition Width="737*"/>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -197,16 +206,16 @@
                             </Grid.RowDefinitions>
 
 
-                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="314.881,0.2,366.8,0">
                                 Podaj ID
                             </Label>
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="SedziaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="1" Margin="241.881,3,294.8,2.2" >
 
                             </TextBox>
 
 
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="291.881,1,344.8,1.4" Grid.Column="1"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -240,6 +249,11 @@
                         </TabItem.Background>
 
                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="83*"/>
+                                <ColumnDefinition Width="7*"/>
+                                <ColumnDefinition Width="304*"/>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -257,15 +271,15 @@
 
 
 
-                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Margin="139.179,0.2,319.8,0">
                                 Wprowadź nazwe drużyny
                             </Label>
 
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="DruzynaNazwa" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="2" Margin="113.179,3,294.8,2.2" >
 
                             </TextBox>
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="163.179,1.2,344.8,1.2" Grid.Column="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -305,7 +319,7 @@
                             <Label HorizontalAlignment="Center" Grid.Row="3">
                                 (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
                             </Label>
-                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="WycofanieDruzynyTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
@@ -327,6 +341,9 @@
                         <TabItem.Background>
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
+                        <StackPanel Name="druzynyStackPanel">
+
+                        </StackPanel>
                     </TabItem>
                     <TabItem Header="szukaj" BorderBrush="#f5e7ca">
                         <TabItem.Background>
@@ -362,7 +379,7 @@
                             <Label Grid.Column="0" HorizontalAlignment="Center" Grid.Row="3">
                                 Podaj ID
                             </Label>
-                            <TextBox Grid.Column="0" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="DruzynaIDTextBox" Grid.Column="0" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
