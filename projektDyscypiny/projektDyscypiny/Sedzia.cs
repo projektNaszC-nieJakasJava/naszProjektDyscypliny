@@ -8,20 +8,21 @@ namespace projektDyscypiny
 {  
     public class Sedzia
         {
-            private String imieSedzia;
-            private String nazwiskoSedzia;
-            private int idSedzia;
-            private static int iloscSedziow;
+            private string imieSedzia;
+            private string nazwiskoSedzia;
+            private int idSedzia ;          
 
-            public Sedzia(String imieSedzia, String nazwiskoSedzia)
+            public Sedzia(string imieSedzia, string nazwiskoSedzia, int sedzia )
             {
                 this.imieSedzia = imieSedzia;
                 this.nazwiskoSedzia = nazwiskoSedzia;
-                //idk jakie ID przypisać
+                this.idSedzia = sedzia;
+               
+
             }
             public int getID_Sedzia() { return idSedzia; }
-            public String getImie_Sedzia() { return imieSedzia; }
-            public String getNazwisko_Sedzia() { return nazwiskoSedzia; }
+            public string getImie_Sedzia() { return imieSedzia; }
+            public string getNazwisko_Sedzia() { return nazwiskoSedzia; }
         }
-    }
+    
 }

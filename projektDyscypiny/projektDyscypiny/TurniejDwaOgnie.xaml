@@ -64,21 +64,21 @@
 
 
 
-                        <CheckBox  Grid.Row="4"  Height="22">
+                        <RadioButton IsChecked="True"  Grid.Row="4"  Height="22">
                             <Label   Margin="-3">
                                 DRUZYNA A
                             </Label>
 
-                        </CheckBox>
+                        </RadioButton>
                         <Label FontWeight="Medium" HorizontalAlignment="Center">
                             VS
                         </Label>
-                        <CheckBox Grid.Row="4"  Height="22">
+                        <RadioButton Grid.Row="4"  Height="22">
                             <Label Margin="-3">
                                 DRUZYNA B
                             </Label>
 
-                        </CheckBox>
+                        </RadioButton>
                     </StackPanel>
 
 
