@@ -353,53 +353,14 @@
                 </TabControl>
 
             </TabItem>
-            <TabItem Header="Turniej" BorderBrush="#f5e7ca">
-                <TabItem.Background>
-                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
-                </TabItem.Background>
-                <Grid>
-
-
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-
-
-
-                    </Grid.RowDefinitions>
-                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="2" Width="150" Margin="15" Grid.ColumnSpan="2" Click="RozpocznijTurniejClick" >
-                        <Button.Background>
-                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
-                        </Button.Background>
-                        Rozpocznij turniej
-                    </Button>
-                    <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-
-                        <Label  FontSize="14"  HorizontalAlignment="Center">
-                            Jeśli chcesz rozpocząć turniej PRZECIĄGANIE LINY w bazie musi być co najmniej: 1 sędzia i 4 drużyny
-                        </Label>
-                        <Label         FontSize="14" HorizontalAlignment="Center">
-                            (uwaga! po rozpoczęciu turnieju nie będzie możliwości dodania nowej drużyny)
-                        </Label>
-
-                    </StackPanel>
-
-
-
-                </Grid>
-            </TabItem>
-            <TabItem Header="Ranking" BorderBrush="#f5e7ca">
+            <TabItem Header="Rozegrane turnieje" BorderBrush="#f5e7ca">
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </TabItem.Background>
 
 
             </TabItem>
-           
+
 
 
 
@@ -412,6 +373,13 @@
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </Button.Background>
                 Powrót
+            </Button>
+
+            <Button Name="RozpocznijTurniejButton" HorizontalAlignment="Center" Width="150" Margin="10" Click="RozpocznijTurniejClick" FontWeight="Bold" Foreground="#292926" BorderBrush="#fff1ae">
+                <Button.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </Button.Background>
+                Rozpocznij turniej
             </Button>
 
 

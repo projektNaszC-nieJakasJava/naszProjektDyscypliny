@@ -392,7 +392,7 @@ namespace projektDyscypiny
                     if (idDruzyna != 0)
                     {
                         DruzynaIDTextBox.Text = "";
-                        MessageBox.Show("NIe drużyna o takim ID");
+                        MessageBox.Show("Nie istnieje drużyna o takim ID");
                     }
                 }
                 catch (System.FormatException)
