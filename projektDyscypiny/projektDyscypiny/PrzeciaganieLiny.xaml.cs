@@ -85,6 +85,7 @@ namespace projektDyscypiny
         {
             if (listaSedziow.Count >=1 && listaDruzyna.Count >= 4)
             {
+                losowanie();
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejPrzeciaganieLiny();
             }
             else
@@ -196,7 +197,7 @@ namespace projektDyscypiny
                     if (id != 0)
                     {
                         UsuwanieSedziegoTextBox.Text = "";
-                        MessageBox.Show("NIe ma sedziego o takim ID");
+                        MessageBox.Show("Nie ma sedziego o takim ID");
                     }
                 }
                 catch (System.FormatException)
@@ -274,7 +275,7 @@ namespace projektDyscypiny
 
                 using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyDruzynaDane.txt"), true))
                 {
-                    streamW.WriteLine(druzyna.getNazwaDruzyny() + ";" + druzyna.getID_Druzyna());
+                    streamW.WriteLine(druzyna.getNazwaDruzyny() + ";" + druzyna.getID_Druzyna() + ";" + druzyna.getWygrane());
                 }
                 WyswietlDruzynyStackPanel(druzyna);
                 listaDruzyna.Add(druzyna);
@@ -326,7 +327,7 @@ namespace projektDyscypiny
                                 foreach (Druzyna druzyna1 in listaDruzyna)
                                 {
 
-                                    streamW.WriteLine(druzyna1.getNazwaDruzyny() + ";" + druzyna1.getID_Druzyna());
+                                    streamW.WriteLine(druzyna1.getNazwaDruzyny() + ";" + druzyna1.getID_Druzyna() + ";" + druzyna1.getWygrane()); ;
 
                                 }
                             id = 0;
@@ -382,14 +383,23 @@ namespace projektDyscypiny
                 }
             }
         }
-        public void losowanieDruzyn(List<Druzyna> druzyny, List<Sedzia> sedziowie)
+
+        private void losowanie() //losowanie do meczy
         {
-            for (int i = 0; i < druzyny.Count - 1; i++)
-                for (int j = 1; j < druzyny.Count - 1; j++)
+            File.WriteAllText("PrzeciaganieLinyMeczeDane.txt", string.Empty);
+            for (int i = 0; i < listaDruzyna.Count - 1; i++)
+                for (int j = i+1; j < listaDruzyna.Count; j++)
                 {
-                    int indexSedziego = random.Next(sedziowie.Count - 1); //losowanie indexu sedziego
-                    listaMeczow.Add(new Mecz(druzyny[i], druzyny[j], sedziowie[indexSedziego]));
+                    int indexSedziego = random.Next(listaSedziow.Count - 1); //losowanie indexu sedziego
+                    listaMeczow.Add(new Mecz(listaDruzyna[i], listaDruzyna[j], listaSedziow[indexSedziego]));
+                    using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyMeczeDane.txt"), true))
+                    {
+                         streamW.WriteLine(listaDruzyna[i].getNazwaDruzyny() + ";" + listaDruzyna[j].getNazwaDruzyny() + ";" + listaSedziow[indexSedziego].getImie_Sedzia() +";" +listaSedziow[indexSedziego].getNazwisko_Sedzia() + ";0;0");
+                    }
                 }
         }
+
+
+
     }
 }

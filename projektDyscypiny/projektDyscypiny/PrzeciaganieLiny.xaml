@@ -236,7 +236,7 @@
 
                             </TextBox>
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="163.179,1.2,344.8,1.2" Grid.Column="2"  >
+                            <Button Click ="DodajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="163.179,1.2,344.8,1.2" Grid.Column="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -282,7 +282,7 @@
 
 
 
-                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button Click="WycofajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
