@@ -90,15 +90,18 @@
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </TabItem.Background>
-                <StackPanel Name ="rankingStackPanel">
+                <StackPanel Name ="rankingStackPanel" Height="1000">
                     
                 </StackPanel>
 
             </TabItem>
-            <TabItem Header="Wyniki meczy" BorderBrush="#f5e7ca">
+            <TabItem Header="Wyniki meczy" BorderBrush="#f5e7ca" >
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </TabItem.Background>
+                <StackPanel Name ="wypisywanieMeczowStackPanel" Height="1000">
+
+                </StackPanel>
 
 
             </TabItem>

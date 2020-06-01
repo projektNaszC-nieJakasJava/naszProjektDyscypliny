@@ -1,5 +1,5 @@
-kamyczki;1;12
-robaczki;3;5
+kamyczki;1;0
+robaczki;3;0
 motylki;4;0
-wicherki;5;1
-jesteśmy super;6;0
+wicherki;5;0
+fchujki;6;0

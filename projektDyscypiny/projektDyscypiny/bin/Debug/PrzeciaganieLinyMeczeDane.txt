@@ -1,10 +1,10 @@
 kamyczki;robaczki;ads;asd;1;0
 kamyczki;motylki;fesefe;gsrgsrgggggggggggg;1;0
-kamyczki;wicherki;adsa;sdasd;0;1
-kamyczki;jesteśmy super;ads;asd;1;0
-robaczki;motylki;asda;asdad;1;0
+kamyczki;wicherki;dfg dfg;dfg;1;0
+kamyczki;fchujki;ads;asd;1;0
+robaczki;motylki;fesefe;gsrgsrgggggggggggg;1;0
 robaczki;wicherki;fesefe;gsrgsrgggggggggggg;1;0
-robaczki;jesteśmy super;fesefe;gsrgsrgggggggggggg;0;0
-motylki;wicherki;dfg dfg;dfg;0;0
-motylki;jesteśmy super;adsa;sdasd;0;0
-wicherki;jesteśmy super;fesefe;gsrgsrgggggggggggg;0;0
+robaczki;fchujki;adsa;sdasd;1;0
+motylki;wicherki;fesefe;gsrgsrgggggggggggg;1;0
+motylki;fchujki;dfg dfg;dfg;1;0
+wicherki;fchujki;fesefe;gsrgsrgggggggggggg;1;0

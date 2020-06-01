@@ -32,7 +32,7 @@ namespace projektDyscypiny
         public int getPunkty() { return punkty; }
         public int getID_Druzyna() { return idDruzyna; }
         public string getNazwaDruzyny() { return nazwaDruzyny; }
-        public int setPunkty(int punkty) { return this.punkty + punkty; } 
+        public int punktyDogrywka() { return this.punkty ++; } 
         public void iloscWygranych() { wygrane ++; } 
         public int iloscPrzegranych() { return this.przegrane + 1; } 
         public int getWygrane() { return wygrane; }

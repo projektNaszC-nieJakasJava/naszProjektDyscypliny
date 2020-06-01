@@ -21,9 +21,9 @@ namespace projektDyscypiny
     /// </summary>
     public partial class PrzeciaganieLiny : Page
     {
-        List<Sedzia> listaSedziow = new List<Sedzia>();
-        List<Druzyna> listaDruzyna = new List<Druzyna>();
-        List<Mecz> listaMeczow = new List<Mecz>();
+        public static List<Sedzia> listaSedziow = new List<Sedzia>();
+        public static List<Druzyna> listaDruzyna = new List<Druzyna>();
+        public static List<Mecz> listaMeczow = new List<Mecz>();
         Random random = new Random();
         public PrzeciaganieLiny()
         {
