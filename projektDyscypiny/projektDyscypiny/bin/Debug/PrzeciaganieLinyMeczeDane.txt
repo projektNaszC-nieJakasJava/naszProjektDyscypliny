@@ -1,10 +1,10 @@
-kamyczki;robaczki;ads;asd;1;0
-kamyczki;motylki;fesefe;gsrgsrgggggggggggg;1;0
-kamyczki;wicherki;dfg dfg;dfg;1;0
-kamyczki;fchujki;ads;asd;1;0
-robaczki;motylki;fesefe;gsrgsrgggggggggggg;1;0
-robaczki;wicherki;fesefe;gsrgsrgggggggggggg;1;0
-robaczki;fchujki;adsa;sdasd;1;0
-motylki;wicherki;fesefe;gsrgsrgggggggggggg;1;0
-motylki;fchujki;dfg dfg;dfg;1;0
-wicherki;fchujki;fesefe;gsrgsrgggggggggggg;1;0
+kamyczki;robaczki;adsa;sdasd;1;0
+kamyczki;motylki;ads;asd;0;1
+kamyczki;wicherki;dfg dfg;dfg;0;1
+kamyczki;fchujki;dfg dfg;dfg;0;1
+robaczki;motylki;dfg dfg;dfg;1;0
+robaczki;wicherki;adsa;sdasd;1;0
+robaczki;fchujki;dfg dfg;dfg;1;0
+motylki;wicherki;ads;asd;1;0
+motylki;fchujki;adsa;sdasd;1;0
+wicherki;fchujki;fesefe;gsrgsrgggggggggggg;0;0
