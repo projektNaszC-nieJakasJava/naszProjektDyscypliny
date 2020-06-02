@@ -17,6 +17,7 @@ namespace projektDyscypiny
         private int punkty_Dr1;
         private int punkty_Dr2;
 
+        public Mecz() { }
         public Mecz(Druzyna druzyna1, Druzyna druzyna2, Sedzia sedzia1)
         {
             this.druzyna1 = druzyna1;

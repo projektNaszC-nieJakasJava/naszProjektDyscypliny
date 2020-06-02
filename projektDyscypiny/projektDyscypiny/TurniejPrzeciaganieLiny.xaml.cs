@@ -25,10 +25,12 @@ namespace projektDyscypiny
         private static string status = "ELIMINACJE";
         private static int numerMeczu = 0;
         private static int numerDogrywki = 0;
-        private int ilosc = 1; //ilosc druzyn wchodzacych do polfinalow z dogrywki
-        private int nrPolfinalu = 0;
-        private Druzyna druzynaPolfinalA = new Druzyna();
-        private Druzyna druzynaPolfinalB = new Druzyna();
+        private static int ilosc = 1; //ilosc druzyn wchodzacych do polfinalow z dogrywki
+        private static int nrPolfinalu = 0;
+        private static Druzyna druzynaPolfinalA = new Druzyna();
+        private static Druzyna druzynaPolfinalB = new Druzyna();
+        private static Druzyna wygranaDruzyna = new Druzyna();
+        private Mecz dogrywkowyMecz = new Mecz();
         public static List<Druzyna> dogrywkaDruzyny = new List<Druzyna>();
         public static List<Mecz> dogrywkaMecze = new List<Mecz>();
         public static List<Druzyna> polfinalyDruzyny = new List<Druzyna>();
@@ -51,16 +53,21 @@ namespace projektDyscypiny
             {
                 DruzynaALabel.Content = dogrywkaMecze[numerDogrywki].getDruzynaA().getNazwaDruzyny();
                 DruzynaBLabel.Content = dogrywkaMecze[numerDogrywki].getDruzynaB().getNazwaDruzyny();
-                numerDogrywki++; 
+                //numerDogrywki++; 
                 WyswietlRankingStackPanel(PrzeciaganieLiny.listaDruzyna);
             }
             if (status == "PÓŁFINAŁY")
             {
-                DruzynaALabel.Content = PrzeciaganieLiny.listaMeczow[numerMeczu].getDruzynaA().getNazwaDruzyny();
-                DruzynaBLabel.Content = PrzeciaganieLiny.listaMeczow[numerMeczu].getDruzynaB().getNazwaDruzyny();
-                numerMeczu++;
+                DruzynaALabel.Content = PrzeciaganieLiny.listaMeczow[numerMeczu + 1].getDruzynaA().getNazwaDruzyny();
+                DruzynaBLabel.Content = PrzeciaganieLiny.listaMeczow[numerMeczu + 1].getDruzynaB().getNazwaDruzyny();
+                // numerMeczu++;
             }
-            
+            if (status == "FINAŁ")
+            {
+                DruzynaALabel.Content = druzynaPolfinalA.getNazwaDruzyny();
+                DruzynaBLabel.Content = druzynaPolfinalB.getNazwaDruzyny();
+            }
+
             DruzynaALabel.FontSize = 14;
             DruzynaBLabel.FontSize = 14;
             // WyswietlRankingStackPanel(PrzeciaganieLiny.listaDruzyna); // wrzuciłyśmy do ifa 
@@ -70,16 +77,19 @@ namespace projektDyscypiny
         private void WynikiTurniejuClick(object sender, RoutedEventArgs e)
         {
 
-            if (numerMeczu == PrzeciaganieLiny.listaMeczow.Count-1 && status == "ELIMINACJE") //dla eliminacji
+            /*if (numerMeczu < PrzeciaganieLiny.listaMeczow.Count && status == "ELIMINACJE")
             {
-                dogrywka();
-            }
+                wpiszWyniki();
+                numerMeczu++;
+            } */
+            /* if (numerMeczu == PrzeciaganieLiny.listaMeczow.Count-1 && status == "ELIMINACJE") //dla eliminacji
+             {
+                 dogrywka();
+             } */
 
             if (status == "DOGRYWKA")
             {
-                wpiszWyniki_Dogrywka();
-                //numerDogrywki++;
-                if (numerDogrywki == dogrywkaMecze.Count) //zabrałysmy -1
+                if (numerDogrywki == dogrywkaMecze.Count - 1)
                 {
                     stworzRanking(dogrywkaDruzyny);
                     for (int i = 0; i < ilosc; i++)
@@ -88,17 +98,34 @@ namespace projektDyscypiny
                     }
                     polfinaly(); //przechodzimy do półfinałów po zakończeniu dogrywki
                 }
+                else
+                {
+                    wpiszWyniki_Dogrywka();
+                    numerDogrywki++;
+                }
             }
 
 
-            if (status == "ELIMINACJE")
+            else if (numerMeczu < PrzeciaganieLiny.listaMeczow.Count && status == "ELIMINACJE")//if (status == "ELIMINACJE")
             {
                 wpiszWyniki();
-                numerMeczu++;
+                if (numerMeczu == PrzeciaganieLiny.listaMeczow.Count - 1) //dla eliminacji
+                {
+                    dogrywka();
+                }
+                else
+                {
+                    numerMeczu++;
+                }
             }
-            if (status == "PÓŁFINAŁY")
+            else if (status == "PÓŁFINAŁY")
             {
                 wpiszWynikiPolfinal();
+                numerMeczu++;
+            }
+            else if (status == "FINAŁ")
+            {
+                rozegrajFinal();
             }
             ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejPrzeciaganieLiny();
             //((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
@@ -140,18 +167,21 @@ namespace projektDyscypiny
 
         private void wpiszWynikiPolfinal()
         {
-
+            stworzRanking(polfinalyDruzyny);
             if (DruzynaARadioButton.IsChecked == true)
             {
+                MessageBox.Show("D " + polfinalyDruzyny[0].getNazwaDruzyny() + " i " + polfinalyDruzyny[1].getNazwaDruzyny() + polfinalyDruzyny[2].getNazwaDruzyny() + polfinalyDruzyny[3].getNazwaDruzyny());
                 if (nrPolfinalu == 0)
                 {
                     druzynaPolfinalA = polfinalyDruzyny[0];
                     nrPolfinalu++;
+                    MessageBox.Show("Pierwsza grupa z półfinałów: " + druzynaPolfinalA.getNazwaDruzyny());
                 }
                 else
                 {
                     druzynaPolfinalB = polfinalyDruzyny[2];
-                    MessageBox.Show("Do finału przechodzą:" + druzynaPolfinalA + " i " + druzynaPolfinalB);
+                    MessageBox.Show("Do finału przechodzą: " + druzynaPolfinalA.getNazwaDruzyny() + " i " + druzynaPolfinalB.getNazwaDruzyny());
+                    finaly();
                 }
             }
             else
@@ -164,8 +194,23 @@ namespace projektDyscypiny
                 else
                 {
                     druzynaPolfinalB = polfinalyDruzyny[3];
-                    MessageBox.Show("Do finału przechodzą:" + druzynaPolfinalA + " i " + druzynaPolfinalB);
+                    MessageBox.Show("Do finału przechodzą:" + druzynaPolfinalA.getNazwaDruzyny() + " i " + druzynaPolfinalB.getNazwaDruzyny());
+                    finaly();
                 }
+            }
+        }
+        private void rozegrajFinal()
+        {
+
+            if (DruzynaARadioButton.IsChecked == true)
+            {
+                wygranaDruzyna = druzynaPolfinalA;
+                MessageBox.Show("Wygrała drużyna: " + wygranaDruzyna);
+            }
+            else
+            {
+                wygranaDruzyna = druzynaPolfinalB;
+                MessageBox.Show("Wygrała drużyna: " + wygranaDruzyna);
             }
         }
 
@@ -181,6 +226,10 @@ namespace projektDyscypiny
                     druzyny[i + 1] = druzynaPom;
                 }
             }
+        }
+        private void ostatecznyRanking()
+        {
+
         }
 
         private void WyswietlRankingStackPanel(List<Druzyna> druzyny)
@@ -209,11 +258,13 @@ namespace projektDyscypiny
 
         private void dogrywka()
         {
+            stworzRanking(PrzeciaganieLiny.listaDruzyna);
             for (int i = 0; i < PrzeciaganieLiny.listaDruzyna.Count; i++)//szukanie druzyn z tą samą ilości pkt co czwarta
             {
                 if (PrzeciaganieLiny.listaDruzyna[i].getWygrane() == PrzeciaganieLiny.listaDruzyna[3].getWygrane())
                 {
                     dogrywkaDruzyny.Add(PrzeciaganieLiny.listaDruzyna[i]);
+                    MessageBox.Show("dodajemy do dogrywki");
                 }
             }
             if (PrzeciaganieLiny.listaDruzyna.Count == 4) //przypadek gdy nie trzeba robic dogrywek, cztery pierwsze druzyny wchodza do polfinalow
@@ -230,16 +281,22 @@ namespace projektDyscypiny
                 for (int i = 0; i < 3; i++)
                 {
                     if (PrzeciaganieLiny.listaDruzyna[i].getWygrane() == PrzeciaganieLiny.listaDruzyna[3].getWygrane())
-                        ilosc++;
+                    { ilosc++; MessageBox.Show("zwiekszamy ilosc"); }
                     else
-                        polfinalyDruzyny.Add(PrzeciaganieLiny.listaDruzyna[i]);
+                    { polfinalyDruzyny.Add(PrzeciaganieLiny.listaDruzyna[i]); MessageBox.Show("dodajemy do polfinalow"); }
                 }
                 for (int i = 0; i < dogrywkaDruzyny.Count - 1; i++)
+                {
                     for (int j = i + 1; j < dogrywkaDruzyny.Count; j++)
                     {
                         int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count - 1); //losowanie indexu sedziego
-                        dogrywkaMecze.Add(new Mecz(dogrywkaDruzyny[i], dogrywkaDruzyny[j], PrzeciaganieLiny.listaSedziow[indexSedziego]));
+                        dogrywkowyMecz = new Mecz(dogrywkaDruzyny[i], dogrywkaDruzyny[j], PrzeciaganieLiny.listaSedziow[indexSedziego]);
+                        dogrywkaMecze.Add(dogrywkowyMecz);
+                        MessageBox.Show("tworzymy mecz dogrywkowy");
+                        MessageBox.Show("mmkkk  " + dogrywkaMecze.Count);
                     }
+                }
+                MessageBox.Show("Trzeba przeprowadzić dogrywki");
             }
             else //przypadek gdy nie trzeba robic dogrywek, cztery pierwsze druzyny wchodza do polfinalow
             {
@@ -263,11 +320,19 @@ namespace projektDyscypiny
                 PrzeciaganieLiny.listaMeczow.Add(new Mecz(polfinalyDruzyny[i], polfinalyDruzyny[j], PrzeciaganieLiny.listaSedziow[indexSedziego]));
             }
         }
+
+        private void finaly()
+        {
+            status = "FINAŁ";
+            int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count - 1);
+            PrzeciaganieLiny.listaMeczow.Add(new Mecz(druzynaPolfinalA, druzynaPolfinalB, PrzeciaganieLiny.listaSedziow[indexSedziego]));
+        }
         private void wpiszWyniki_Dogrywka()
         {
 
             if (DruzynaARadioButton.IsChecked == true)
             {
+                MessageBox.Show("mm" + numerDogrywki + "  " + dogrywkaMecze.Count);
                 foreach (Druzyna druzyna in dogrywkaDruzyny)
                 {
                     if (dogrywkaMecze[numerDogrywki].getDruzynaA().getNazwaDruzyny() == druzyna.getNazwaDruzyny())
@@ -275,7 +340,6 @@ namespace projektDyscypiny
                         druzyna.punktyDogrywka();
                     }
                 }
-                dogrywkaMecze[numerDogrywki].wygranaDruzynyA(); //wynik meczu np. 1:0
             }
             else
             {
@@ -286,7 +350,6 @@ namespace projektDyscypiny
                         druzyna.punktyDogrywka();
                     }
                 }
-                dogrywkaMecze[numerDogrywki].wygranaDruzynyB();
             }
 
         }
