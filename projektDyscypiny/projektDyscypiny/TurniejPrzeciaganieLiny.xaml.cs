@@ -89,8 +89,6 @@ namespace projektDyscypiny
                     numerDogrywki++;
                 }
             }
-
-
             else if (numerMeczu < PrzeciaganieLiny.listaMeczow.Count && status == "ELIMINACJE")
             {
                 wpiszWyniki();
@@ -267,9 +265,9 @@ namespace projektDyscypiny
                 for (int i = 0; i < 3; i++)
                 {
                     if (PrzeciaganieLiny.listaDruzyna[i].getWygrane() == PrzeciaganieLiny.listaDruzyna[3].getWygrane())
-                    { ilosc++; MessageBox.Show("zwiekszamy ilosc"); }
+                     ilosc++; 
                     else
-                    { polfinalyDruzyny.Add(PrzeciaganieLiny.listaDruzyna[i]); MessageBox.Show("dodajemy do polfinalow"); }
+                     polfinalyDruzyny.Add(PrzeciaganieLiny.listaDruzyna[i]);
                 }
                 for (int i = 0; i < dogrywkaDruzyny.Count - 1; i++)
                 {
@@ -280,7 +278,6 @@ namespace projektDyscypiny
                         dogrywkaMecze.Add(dogrywkowyMecz);
                     }
                 }
-                MessageBox.Show("Trzeba przeprowadzić dogrywki");
             }
             else //przypadek gdy nie trzeba robic dogrywek, cztery pierwsze druzyny wchodza do polfinalow
             {
