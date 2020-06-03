@@ -191,14 +191,12 @@ namespace projektDyscypiny
             if (DruzynaARadioButton.IsChecked == true)
             {
                 wygranaDruzyna = druzynaPolfinalA;
-                MessageBox.Show("Wygrała drużyna: " + wygranaDruzyna.getNazwaDruzyny());
                 druzynaPolfinalA = druzynaPolfinalB;
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
             }
             else
             {
                 wygranaDruzyna = druzynaPolfinalB;
-                MessageBox.Show("Wygrała drużyna: " + wygranaDruzyna.getNazwaDruzyny());
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
             }
         }
@@ -273,7 +271,7 @@ namespace projektDyscypiny
                 {
                     for (int j = i + 1; j < dogrywkaDruzyny.Count; j++)
                     {
-                        int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count - 1); //losowanie indexu sedziego
+                        int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count); //losowanie indexu sedziego
                         dogrywkowyMecz = new Mecz(dogrywkaDruzyny[i], dogrywkaDruzyny[j], PrzeciaganieLiny.listaSedziow[indexSedziego]);
                         dogrywkaMecze.Add(dogrywkowyMecz);
                     }
@@ -296,7 +294,7 @@ namespace projektDyscypiny
             status = "PÓŁFINAŁY";
             for (int i = 0, j = 1; i < 3; i += 2, j += 2) //tworzymy mecz dla 1 i 2 drużyny wg rankingu, a potem dla 3 i 4
             {
-                int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count - 1);
+                int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count );
                 PrzeciaganieLiny.listaMeczow.Add(new Mecz(polfinalyDruzyny[i], polfinalyDruzyny[j], PrzeciaganieLiny.listaSedziow[indexSedziego]));
             }
         }
@@ -304,7 +302,7 @@ namespace projektDyscypiny
         private void finaly()
         {
             status = "FINAŁ";
-            int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count - 1);
+            int indexSedziego = random.Next(PrzeciaganieLiny.listaSedziow.Count);
             PrzeciaganieLiny.listaMeczow.Add(new Mecz(druzynaPolfinalA, druzynaPolfinalB, PrzeciaganieLiny.listaSedziow[indexSedziego]));
         }
         private void wpiszWyniki_Dogrywka()

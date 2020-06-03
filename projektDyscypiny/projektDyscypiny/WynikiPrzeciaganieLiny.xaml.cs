@@ -67,7 +67,6 @@ namespace projektDyscypiny
         private void zapisRankinguPlik()
         {
             i = 3;
-            File.WriteAllText("PrzeciaganieLinyRankingTurnieju.txt", string.Empty);
             using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyRankingTurnieju.txt"), true))
             {
                 streamW.WriteLine("1. " + TurniejPrzeciaganieLiny.wygranaDruzyna.getNazwaDruzyny() + " ID: " + TurniejPrzeciaganieLiny.wygranaDruzyna.getID_Druzyna());
@@ -85,6 +84,9 @@ namespace projektDyscypiny
                 {
                     streamW.WriteLine(j+1 + ". " + PrzeciaganieLiny.listaDruzyna[j].getNazwaDruzyny() + " ID: " + PrzeciaganieLiny.listaDruzyna[j].getID_Druzyna());
                 }
+                streamW.WriteLine(";");
+
+
             }
         }
         private void czyszczenieDanych()

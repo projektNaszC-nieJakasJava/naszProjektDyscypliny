@@ -10,7 +10,6 @@
 
     <StackPanel >
 
-
         <StackPanel.Background>
             <ImageBrush ImageSource="tloDwaOgnie.jpg"/>
         </StackPanel.Background>
@@ -64,6 +63,7 @@
 
                             </TextBox>
 
+
                             <Label HorizontalAlignment="Center" Grid.Row="4">
                                 Wprowadź nazwisko
                             </Label>
@@ -91,10 +91,6 @@
                         </TabItem.Background>
 
                         <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="38*"/>
-                                <ColumnDefinition Width="159*"/>
-                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -110,19 +106,19 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Label HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="111.636,0.4,263.8,27" Grid.RowSpan="2">
+                            <Label HorizontalAlignment="Center" Grid.Row="2">
                                 Wprowadź ID sędziego którego chcesz wycofać
                             </Label>
-                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="98.636,0.2,250.8,0">
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
                                 (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
                             </Label>
-                            <TextBox Name="UsuwanieSedziegoTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="1" Margin="141.636,3,294.8,2.2" >
+                            <TextBox Name="UsuwanieSedziegoTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
 
 
-                            <Button Click="UsunSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="191.636,1,344.8,1.4" Grid.Column="1"   >
+                            <Button Click="UsunSedziegoClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -135,7 +131,6 @@
                         </Grid>
 
                     </TabItem>
-
                     <TabItem Header="wyświetl" BorderBrush="#f5e7ca" >
                         <TabItem.Background>
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
@@ -145,11 +140,11 @@
 
                         </StackPanel>
                     </TabItem>
-
                     <TabItem Header="szukaj" BorderBrush="#f5e7ca" >
                         <TabItem.Background>
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
+
 
                         <Grid>
                             <Grid.RowDefinitions>
@@ -171,7 +166,7 @@
                             <Label HorizontalAlignment="Center" Grid.Row="3">
                                 Podaj ID
                             </Label>
-                            <TextBox Name="SedziaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox  Name="SedziaIDTextBox"   HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
@@ -211,6 +206,11 @@
                         </TabItem.Background>
 
                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="83*"/>
+                                <ColumnDefinition Width="7*"/>
+                                <ColumnDefinition Width="304*"/>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -228,15 +228,15 @@
 
 
 
-                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Margin="139.179,0.2,319.8,0">
                                 Wprowadź nazwe drużyny
                             </Label>
 
-                            <TextBox Name="DruzynaNazwa" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <TextBox Name="DruzynaNazwa" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="2" Margin="113.179,3,294.8,2.2" >
 
                             </TextBox>
 
-                            <Button Click="DodajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button Click ="DodajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="163.179,1.2,344.8,1.2" Grid.Column="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -255,11 +255,6 @@
                         </TabItem.Background>
 
                         <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="14*"/>
-                                <ColumnDefinition Width="9*"/>
-                                <ColumnDefinition Width="765*"/>
-                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -275,19 +270,19 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Label HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" Margin="251.405,0.4,273.8,27" Grid.RowSpan="2">
+                            <Label HorizontalAlignment="Center" Grid.Row="2">
                                 Wprowadź ID drużyny którą chcesz wycofać
                             </Label>
-                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Margin="227.405,0.2,250.8,0">
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
                                 (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
                             </Label>
-                            <TextBox Name="WycofanieDruzynyTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="2" Margin="270.405,3,294.8,2.2" >
+                            <TextBox Name="WycofanieDruzynyTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
 
                             </TextBox>
 
 
 
-                            <Button Click ="WycofajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="320.405,1.2,344.8,1.2" Grid.Column="2"  >
+                            <Button Click="WycofajDruzyneClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -307,13 +302,16 @@
 
                         </StackPanel>
                     </TabItem>
-
-                    <TabItem Header="szukaj" BorderBrush="#f5e7ca" >
+                    <TabItem Header="szukaj" BorderBrush="#f5e7ca">
                         <TabItem.Background>
                             <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                         </TabItem.Background>
 
                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="52*"/>
+                                <ColumnDefinition Width="737*"/>
+                            </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
                                 <RowDefinition/>
@@ -330,16 +328,14 @@
                             </Grid.RowDefinitions>
 
 
-                            <Label HorizontalAlignment="Center" Grid.Row="3">
-                                Podaj ID
-                            </Label>
-                            <TextBox Name="DruzynaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+                            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="299,0.2,344.8,0" Width="93" Content="    Podaj ID"/>
+                            <TextBox Name="DruzynaIDTextBox" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" Grid.Column="1" Margin="241.881,3,294.8,2.2" >
 
                             </TextBox>
 
 
 
-                            <Button Click="SzukajDruzynaClick" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="291.881,1,344.8,1.4" Grid.Column="1"  >
                                 <Button.Background>
                                     <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                                 </Button.Background>
@@ -350,6 +346,8 @@
 
 
                         </Grid>
+
+
                     </TabItem>
 
                 </TabControl>
@@ -362,6 +360,7 @@
 
 
             </TabItem>
+
 
 
 
@@ -386,8 +385,6 @@
 
 
         </Grid>
-
-
 
 
 

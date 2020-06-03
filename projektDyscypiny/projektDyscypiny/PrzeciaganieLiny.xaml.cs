@@ -372,7 +372,7 @@ namespace projektDyscypiny
                     if (idDruzyna != 0)
                     {
                         DruzynaIDTextBox.Text = "";
-                        MessageBox.Show("NIe drużyna o takim ID");
+                        MessageBox.Show("Nie ma drużyny o takim ID");
                     }
                 }
                 catch (System.FormatException)
@@ -389,7 +389,7 @@ namespace projektDyscypiny
             for (int i = 0; i < listaDruzyna.Count - 1; i++)
                 for (int j = i+1; j < listaDruzyna.Count; j++)
                 {
-                    int indexSedziego = random.Next(listaSedziow.Count - 1); //losowanie indexu sedziego
+                    int indexSedziego = random.Next(listaSedziow.Count); //losowanie indexu sedziego
                     listaMeczow.Add(new Mecz(listaDruzyna[i], listaDruzyna[j], listaSedziow[indexSedziego]));
                     using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyMeczeDane.txt"), true))
                     {

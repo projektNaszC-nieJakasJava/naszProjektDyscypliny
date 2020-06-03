@@ -21,12 +21,13 @@ namespace projektDyscypiny
     /// </summary>
     public partial class DwaOgnie : Page
     {
-        List<Sedzia> listaSedziow = new List<Sedzia>();
-        List<Druzyna> listaDruzyna = new List<Druzyna>();
+        public static List<Sedzia> listaSedziow = new List<Sedzia>();
+        public static List<Druzyna> listaDruzyna = new List<Druzyna>();
+        public static List<Mecz> listaMeczow = new List<Mecz>();
+        Random random = new Random();
         public DwaOgnie()
         {
             InitializeComponent();
-
             try
             {
                 using (StreamReader streamR = new StreamReader("DwaOgnieSedziaDane.txt"))
@@ -50,7 +51,6 @@ namespace projektDyscypiny
             {
                 MessageBox.Show("Brak pliku z sędziami");
             }
-
             try
             {
                 using (StreamReader streamR = new StreamReader("DwaOgnieDruzynaDane.txt"))
@@ -62,7 +62,7 @@ namespace projektDyscypiny
                         string[] podzialListy = linia.Split(oddzielanieWyrazow);
                         Label label = new Label();
                         int intID = Int32.Parse(podzialListy[1]);
-                        label.Content = "Nazwa drużyny: " + podzialListy[0] + " ID: " + intID;
+                        label.Content = "Nazwa druzyny: " + podzialListy[0] + " ID: " + intID;
                         druzynyStackPanel.Children.Add(label);
                         Druzyna druzyna = new Druzyna(podzialListy[0], intID);
                         label.Tag = druzyna.getID_Druzyna();
@@ -76,7 +76,6 @@ namespace projektDyscypiny
             }
         }
 
-
         private void Powrot(object sender, RoutedEventArgs e)
         {
             ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new GlowneMenu();
@@ -86,15 +85,16 @@ namespace projektDyscypiny
         {
             if (listaSedziow.Count >= 1 && listaDruzyna.Count >= 4)
             {
+                losowanie();
+                TurniejDwaOgnie.status = "ELIMINACJE";
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejDwaOgnie();
             }
             else
             {
-                MessageBox.Show("Jeśli chcesz rozpocząć turniej DWÓCH OGNI w bazie musi być co najmniej 1 sędzia i 4 drużyny");
-                MessageBox.Show("Sprawdź w opcjach 'wyświetl' czy masz wystarczającą ilość");
+                MessageBox.Show("Jeśli chcesz rozpocząć turniej w DWA OGNIE w bazie musi być co najmniej: 1 sędzia i 4 drużyny");
+                MessageBox.Show("Sprawdź w ocpjach 'wyświetl' czy posiadasz wystarczającą ilość");
             }
         }
-
         int WygenerujSedziaID()
         {
             int maxID = 0;
@@ -108,7 +108,6 @@ namespace projektDyscypiny
             }
             return maxID + 1;
         }
-
         private void DodajSedziegoClick(object sender, RoutedEventArgs e)
         {
             string imie = SedziaImie.Text;
@@ -140,8 +139,7 @@ namespace projektDyscypiny
                 SedziaNazwisko.Text = "";
                 MessageBox.Show("Pomyślnie dodano sędziego");
             }
-         }
-        
+        }
         void WyswietlSedziowStackPanel(Sedzia sedzia)
         {
             Label label = new Label();
@@ -149,7 +147,6 @@ namespace projektDyscypiny
             label.Tag = sedzia.getID_Sedzia();
             sedziowieStackPanel.Children.Add(label);
         }
-
         void UsunSedziegoStackPanel(Sedzia sedzia)
         {
             Label label;
@@ -163,7 +160,6 @@ namespace projektDyscypiny
                 }
             }
         }
-
         private void UsunSedziegoClick(object sender, RoutedEventArgs e)
         {
             string id2 = UsuwanieSedziegoTextBox.Text;
@@ -212,7 +208,6 @@ namespace projektDyscypiny
                 }
             }
         }
-
         private void SzukajSedziegoClick(object sender, RoutedEventArgs e)
         {
             if (SedziaIDTextBox.Text == "")
@@ -239,7 +234,7 @@ namespace projektDyscypiny
                     if (idSedzia != 0)
                     {
                         SedziaIDTextBox.Text = "";
-                        MessageBox.Show("Nie ma sedziego o takim ID");
+                        MessageBox.Show("NIe ma sedziego o takim ID");
                     }
                 }
                 catch (System.FormatException)
@@ -249,7 +244,6 @@ namespace projektDyscypiny
                 }
             }
         }
-
         int wygenerujDruzynaID()
         {
             int maxID = 0;
@@ -264,7 +258,6 @@ namespace projektDyscypiny
 
             return maxID + 1;
         }
-
         private void DodajDruzyneClick(object sender, RoutedEventArgs e)
         {
             string nazwa = DruzynaNazwa.Text;
@@ -298,7 +291,6 @@ namespace projektDyscypiny
             label.Tag = druzyna.getID_Druzyna();
             druzynyStackPanel.Children.Add(label);
         }
-
         void WycofajDruzyneStackPanel(Druzyna druzyna)
         {
             Label label;
@@ -312,7 +304,6 @@ namespace projektDyscypiny
                 }
             }
         }
-
         private void WycofajDruzyneClick(object sender, RoutedEventArgs e)
         {
             if (WycofanieDruzynyTextBox.Text == "")
@@ -336,9 +327,7 @@ namespace projektDyscypiny
                             using (StreamWriter streamW = new StreamWriter(("DwaOgnieDruzynaDane.txt"), true))
                                 foreach (Druzyna druzyna1 in listaDruzyna)
                                 {
-
                                     streamW.WriteLine(druzyna1.getNazwaDruzyny() + ";" + druzyna1.getID_Druzyna());
-
                                 }
                             id = 0;
                             break;
@@ -347,7 +336,7 @@ namespace projektDyscypiny
                     if (id != 0)
                     {
                         WycofanieDruzynyTextBox.Text = "";
-                        MessageBox.Show("Nie ma drużyny o takim ID");
+                        MessageBox.Show("NIe ma drużyny o takim ID");
                     }
                 }
                 catch (System.FormatException)
@@ -356,9 +345,7 @@ namespace projektDyscypiny
                     WycofanieDruzynyTextBox.Text = "";
                 }
             }
-
         }
-
         private void SzukajDruzynaClick(object sender, RoutedEventArgs e)
         {
             if (DruzynaIDTextBox.Text == "")
@@ -385,7 +372,7 @@ namespace projektDyscypiny
                     if (idDruzyna != 0)
                     {
                         DruzynaIDTextBox.Text = "";
-                        MessageBox.Show("Nie istnieje drużyna o takim ID");
+                        MessageBox.Show("Nie ma drużyny o takim ID");
                     }
                 }
                 catch (System.FormatException)
@@ -395,6 +382,23 @@ namespace projektDyscypiny
                 }
             }
         }
+
+        private void losowanie() //losowanie do meczy
+        {
+            File.WriteAllText("DwaOgnieMeczeDane.txt", string.Empty);
+            for (int i = 0; i < listaDruzyna.Count - 1; i++)
+                for (int j = i + 1; j < listaDruzyna.Count; j++)
+                {
+                    int indexSedziego = random.Next(listaSedziow.Count); //losowanie indexu sedziego
+                    listaMeczow.Add(new Mecz(listaDruzyna[i], listaDruzyna[j], listaSedziow[indexSedziego]));
+                    using (StreamWriter streamW = new StreamWriter(("DwaOgnieMeczeDane.txt"), true))
+                    {
+                        streamW.WriteLine(listaDruzyna[i].getNazwaDruzyny() + ";" + listaDruzyna[j].getNazwaDruzyny() + ";" + listaSedziow[indexSedziego].getImie_Sedzia() + ";" + listaSedziow[indexSedziego].getNazwisko_Sedzia() + ";0;0");
+                    }
+                }
+        }
+
+
+
     }
 }
-

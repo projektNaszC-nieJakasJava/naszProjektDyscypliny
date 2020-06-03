@@ -36,7 +36,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="6" Width="150" Margin="6" Grid.ColumnSpan="2" Click="WynikiTurniejuClick" >
+                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="6" Width="150" Margin="6" Grid.ColumnSpan="2" Click="WynikiTurniejuClick"  >
                         <Button.Background>
                             <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
                         </Button.Background>
@@ -45,11 +45,10 @@
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"   Grid.Row="1" Grid.ColumnSpan="2">
 
-                        <Label FontWeight="Medium"  FontSize="14"  HorizontalAlignment="Center">
-                            Aktualny status rozgrywek:
-                        </Label>
-                        <Label         FontSize="14" HorizontalAlignment="Center">
-                            XXXXXX
+
+                        <Label Name="statusLabel"  HorizontalAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" Margin="0,0,0,-0.2" Width="298">
+
+
                         </Label>
 
                     </StackPanel>
@@ -57,25 +56,25 @@
 
 
                     <Label Grid.Row="3" FontSize="14"  HorizontalAlignment="Center">
-                            Zaznacz drużyna która ma wygrać i zatwierdź wynik
-                        </Label>
+                        Zaznacz drużyna która ma wygrać i zatwierdź wynik
+                    </Label>
 
                     <StackPanel  HorizontalAlignment="Center"   Grid.Row="4" >
 
 
 
-                        <RadioButton IsChecked="True"  Grid.Row="4"  Height="22">
-                            <Label   Margin="-3">
-                                DRUZYNA A
+                        <RadioButton Name="DruzynaARadioButton"  IsChecked="True" Grid.Row="4"  Height="22">
+                            <Label Name ="DruzynaALabel"  Margin="-3">
+
                             </Label>
 
                         </RadioButton>
                         <Label FontWeight="Medium" HorizontalAlignment="Center">
                             VS
                         </Label>
-                        <RadioButton Grid.Row="4"  Height="22">
-                            <Label Margin="-3">
-                                DRUZYNA B
+                        <RadioButton Name="DruzynaBRadioButton" Grid.Row="4"  Height="22">
+                            <Label Name ="DruzynaBLabel" Margin="-3">
+
                             </Label>
 
                         </RadioButton>
@@ -91,17 +90,22 @@
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </TabItem.Background>
+                <StackPanel Name ="rankingStackPanel" Height="1000">
 
+                </StackPanel>
 
             </TabItem>
-            <TabItem Header="Wyniki meczy" BorderBrush="#f5e7ca">
+            <TabItem Header="Wyniki meczy" BorderBrush="#f5e7ca" >
                 <TabItem.Background>
                     <SolidColorBrush Color="#f0d292" Opacity="0.6" />
                 </TabItem.Background>
+                <StackPanel Name ="wypisywanieMeczowStackPanel" Height="1000">
+
+                </StackPanel>
 
 
             </TabItem>
-            
+
         </TabControl>
 
 
