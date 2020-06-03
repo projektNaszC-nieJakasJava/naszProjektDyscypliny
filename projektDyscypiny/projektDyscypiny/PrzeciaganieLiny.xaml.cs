@@ -86,6 +86,7 @@ namespace projektDyscypiny
             if (listaSedziow.Count >=1 && listaDruzyna.Count >= 4)
             {
                 losowanie();
+                TurniejPrzeciaganieLiny.status = "ELIMINACJE";
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new TurniejPrzeciaganieLiny();
             }
             else
@@ -275,7 +276,7 @@ namespace projektDyscypiny
 
                 using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyDruzynaDane.txt"), true))
                 {
-                    streamW.WriteLine(druzyna.getNazwaDruzyny() + ";" + druzyna.getID_Druzyna() + ";" + druzyna.getWygrane());
+                    streamW.WriteLine(druzyna.getNazwaDruzyny() + ";" + druzyna.getID_Druzyna());
                 }
                 WyswietlDruzynyStackPanel(druzyna);
                 listaDruzyna.Add(druzyna);
@@ -326,9 +327,7 @@ namespace projektDyscypiny
                             using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyDruzynaDane.txt"), true))
                                 foreach (Druzyna druzyna1 in listaDruzyna)
                                 {
-
-                                    streamW.WriteLine(druzyna1.getNazwaDruzyny() + ";" + druzyna1.getID_Druzyna() + ";" + druzyna1.getWygrane()); ;
-
+                                    streamW.WriteLine(druzyna1.getNazwaDruzyny() + ";" + druzyna1.getID_Druzyna());
                                 }
                             id = 0;
                             break;

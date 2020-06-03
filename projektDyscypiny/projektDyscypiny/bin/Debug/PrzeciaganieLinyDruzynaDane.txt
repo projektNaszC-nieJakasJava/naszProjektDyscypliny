@@ -1,5 +1,5 @@
-kamyczki;1;0
-robaczki;3;0
-motylki;4;0
-wicherki;5;0
-fchujki;6;0
+robaczki;3
+wicherki;5
+biedroneczki;7
+rybki;9
+promyczki;10

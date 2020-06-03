@@ -40,67 +40,19 @@
 
         </StackPanel>
 
-        <Label HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" >DANE DRUUZYNY</Label>
+        <Label Name ="WygranaDruzynaLabel" FontWeight="Bold"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" >
+            
+        </Label>
 
-        <Button  Grid.Column="1" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="4" Width="150" Margin="6" Height="40" Click="PowrotClick" >
+        <Button   Grid.Column="1" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="4" Width="150" Margin="6" Height="40" Click="PowrotClick" >
             <Button.Background>
                 <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
             </Button.Background>
             Zakończ turniej
         </Button>
 
-        <StackPanel Grid.Column="1" Grid.Row="6">
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
-            <Label HorizontalAlignment="Center">
-                RANKING
-            </Label>
+        <StackPanel HorizontalAlignment="Center" Height =" 400" Name ="ostatecznyRankingStackPanel"  Grid.Column="1" Grid.Row="6">
+            
 
 
         </StackPanel>
