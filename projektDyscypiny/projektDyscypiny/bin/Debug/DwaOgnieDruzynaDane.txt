@@ -1,5 +1,6 @@
-aaaaaa;1
-bbbbbbbbbbb;2
-cccccccccc;3
-dddddddddd;4
-eeeeeeee;5
+ananaski;1
+pomarańczki;3
+papużki;4
+krokodylki;5
+traktorki;6
+gwoździki;8

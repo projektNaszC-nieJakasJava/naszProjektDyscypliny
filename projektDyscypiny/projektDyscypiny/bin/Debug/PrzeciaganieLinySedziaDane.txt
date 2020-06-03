@@ -1,3 +1,5 @@
-ads;asd;5
-Justynka;Harmuszkiewicz;9
-miro;kowalski;10
+Jan;But;1
+Katarzyna;Kocyk;2
+Piotr;Myszkowski;3
+Justyna;Harmuszkiewicz;5
+Małgorzata;Kocur;8

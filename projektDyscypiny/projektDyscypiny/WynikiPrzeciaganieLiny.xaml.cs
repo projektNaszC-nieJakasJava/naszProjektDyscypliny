@@ -33,6 +33,7 @@ namespace projektDyscypiny
         private void PowrotClick(object sender, RoutedEventArgs e)
         {
             zapisRankinguPlik();
+            zapisMeczow();
             ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new GlowneMenu();//zmiana okna z przec. liny na glowne
             czyszczenieDanych();
         }
@@ -100,6 +101,20 @@ namespace projektDyscypiny
             TurniejPrzeciaganieLiny.numerDogrywki = 0;
             TurniejPrzeciaganieLiny.numerMeczu = 0;
             File.WriteAllText("PrzeciaganieLinyMeczeDane.txt", string.Empty);
+        }
+        private void zapisMeczow()
+        {
+            foreach (Mecz mecz in PrzeciaganieLiny.listaMeczow)
+            {
+                using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyMeczeKoniec.txt"), true))
+                {
+                    streamW.WriteLine(mecz.getDruzynaA().getNazwaDruzyny() + " " + mecz.getDruzynaB().getNazwaDruzyny() + " " + mecz.getSedzia().getImie_Sedzia() + " " + mecz.getSedzia().getNazwisko_Sedzia() + " " + mecz.getPunkty_Dr1() + ":" + mecz.getPunkty_Dr2());
+                }
+            }
+            using (StreamWriter streamW = new StreamWriter(("PrzeciaganieLinyMeczeKoniec.txt"), true))
+            {
+                streamW.WriteLine(";");
+            }
         }
     }
 }

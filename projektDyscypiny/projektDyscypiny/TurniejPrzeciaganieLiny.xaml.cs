@@ -108,6 +108,7 @@ namespace projektDyscypiny
             }
             else if (status == "FINAŁ")
             {
+                numerMeczu++;
                 rozegrajFinal();
                 status = "KONIEC";
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
@@ -192,11 +193,13 @@ namespace projektDyscypiny
             {
                 wygranaDruzyna = druzynaPolfinalA;
                 druzynaPolfinalA = druzynaPolfinalB;
+                PrzeciaganieLiny.listaMeczow[numerMeczu].wygranaDruzynyA();
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
             }
             else
             {
                 wygranaDruzyna = druzynaPolfinalB;
+                PrzeciaganieLiny.listaMeczow[numerMeczu].wygranaDruzynyB();
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new WynikiPrzeciaganieLiny();
             }
         }
