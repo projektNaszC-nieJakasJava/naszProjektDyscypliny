@@ -1,0 +1,17 @@
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\projektDyscypinyTests2.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\projektDyscypinyTests2.pdb
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\projektDyscypiny.exe
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\projektDyscypiny.pdb
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\projektDyscypiny.exe.config
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\obj\Debug\projektDyscypinyTests2.csprojAssemblyReference.cache
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\obj\Debug\projektDyscypinyTests2.csproj.CoreCompileInputs.cache
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\obj\Debug\projektDyscypinyTests2.csproj.CopyComplete
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\obj\Debug\projektDyscypinyTests2.dll
+C:\Users\rafal\Documents\GitHub\projektDyscypliny123\projektDyscypiny\projektDyscypinyTests2\obj\Debug\projektDyscypinyTests2.pdb

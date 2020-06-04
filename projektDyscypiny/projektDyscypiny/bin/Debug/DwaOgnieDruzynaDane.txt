@@ -1,6 +1,5 @@
-ananaski;1
-pomarańczki;3
-papużki;4
-krokodylki;5
-traktorki;6
-gwoździki;8
+bialystok;1
+toruń;2
+sosnowiec;3
+warszawa;4
+sopot;5

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using projektDyscypiny.Lina;
+using projektDyscypiny.Ogien;
+using projektDyscypiny.Siatka;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

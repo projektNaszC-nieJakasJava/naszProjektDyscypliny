@@ -1,0 +1,52 @@
+TURNIEJ
+
+Ranking:
+
+1. sosnowiec ID: 3
+2. bialystok ID: 1
+3. toruń ID: 2
+4. warszawa ID: 4
+5. sopot ID: 5
+
+Wyniki Meczy
+
+bialystok VS toruń sedzia Justyna Harmuczkiewicz Wynik 1:0
+bialystok VS sosnowiec sedzia Gabriela Psikuta Wynik 1:0
+bialystok VS warszawa sedzia Jan Kowalski Wynik 1:0
+bialystok VS sopot sedzia Justyna Harmuczkiewicz Wynik 1:0
+toruń VS sosnowiec sedzia Gabriela Psikuta Wynik 1:0
+toruń VS warszawa sedzia Justyna Harmuczkiewicz Wynik 1:0
+toruń VS sopot sedzia Gabriela Psikuta Wynik 1:0
+sosnowiec VS warszawa sedzia Justyna Harmuczkiewicz Wynik 1:0
+sosnowiec VS sopot sedzia Gabriela Psikuta Wynik 1:0
+warszawa VS sopot sedzia Gabriela Psikuta Wynik 1:0
+bialystok VS toruń sedzia Justyna Harmuczkiewicz Wynik 1:0
+sosnowiec VS warszawa sedzia Jan Kowalski Wynik 1:0
+bialystok VS sosnowiec sedzia Jan Kowalski Wynik 0:1
+
+TURNIEJ
+
+Ranking:
+
+1. bialystok ID: 1
+2. sosnowiec ID: 3
+3. toruń ID: 2
+4. warszawa ID: 4
+5. sopot ID: 5
+
+Wyniki Meczy
+
+bialystok VS toruń sedzia Jan Kowalski Wynik 1:0
+bialystok VS sosnowiec sedzia Gabriela Psikuta Wynik 1:0
+bialystok VS warszawa sedzia Justyna Harmuczkiewicz Wynik 1:0
+bialystok VS sopot sedzia Jan Kowalski Wynik 1:0
+toruń VS sosnowiec sedzia Gabriela Psikuta Wynik 1:0
+toruń VS warszawa sedzia Gabriela Psikuta Wynik 1:0
+toruń VS sopot sedzia Jan Kowalski Wynik 1:0
+sosnowiec VS warszawa sedzia Gabriela Psikuta Wynik 1:0
+sosnowiec VS sopot sedzia Justyna Harmuczkiewicz Wynik 1:0
+warszawa VS sopot sedzia Gabriela Psikuta Wynik 1:0
+bialystok VS toruń sedzia Justyna Harmuczkiewicz Wynik 1:0
+sosnowiec VS warszawa sedzia Jan Kowalski Wynik 1:0
+bialystok VS sosnowiec sedzia Gabriela Psikuta Wynik 1:0
+

@@ -9,14 +9,16 @@
       Title="GlowneMenu">
 
     <Grid >
+
+
         <Grid.Background>
-            <ImageBrush ImageSource="tloMenu.jpg"/>
+            <ImageBrush ImageSource="/zdjecia/tloMenu.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-
+        
 
         </Grid.ColumnDefinitions>
 

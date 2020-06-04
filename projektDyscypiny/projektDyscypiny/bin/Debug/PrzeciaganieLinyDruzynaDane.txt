@@ -1,5 +1,5 @@
-robaczki;3
-wicherki;5
-biedroneczki;7
-rybki;9
-promyczki;10
+﻿chomik;1
+królik;2
+kaczka;3
+mucha;4
+koń;5

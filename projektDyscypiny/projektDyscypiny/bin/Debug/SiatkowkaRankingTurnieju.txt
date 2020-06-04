@@ -1,0 +1,48 @@
+TURNIEJ
+
+Ranking:
+
+1. zielony ID: 1
+2. czarny ID: 3
+3. czerwony ID: 2
+4. biały ID: 4
+5. niebieski ID: 5
+
+zielony VS czerwony Glowny sedzia Natalia Kukulska Wynik 1:0
+zielony VS czarny Glowny sedzia Kamil Stoch Wynik 1:0
+zielony VS biały Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+zielony VS niebieski Glowny sedzia Kamil Stoch Wynik 1:0
+czerwony VS czarny Glowny sedzia Jan Kowalski Wynik 1:0
+czerwony VS biały Glowny sedzia Kamil Stoch Wynik 1:0
+czerwony VS niebieski Glowny sedzia Kamil Stoch Wynik 1:0
+czarny VS biały Glowny sedzia Jan Kowalski Wynik 1:0
+czarny VS niebieski Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+biały VS niebieski Glowny sedzia Jan Kowalski Wynik 1:0
+zielony VS czerwony Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+czarny VS biały Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+zielony VS czarny Glowny sedzia Jan Kowalski Wynik 1:0
+
+TURNIEJ
+
+Ranking:
+
+1. zielony ID: 1
+2. czarny ID: 3
+3. czerwony ID: 2
+4. biały ID: 4
+5. niebieski ID: 5
+
+zielony VS czerwony Glowny sedzia Jan Kowalski Wynik 1:0
+zielony VS czarny Glowny sedzia Jan Kowalski Wynik 1:0
+zielony VS biały Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+zielony VS niebieski Glowny sedzia Natalia Kukulska Wynik 1:0
+czerwony VS czarny Glowny sedzia Kamil Stoch Wynik 1:0
+czerwony VS biały Glowny sedzia Natalia Kukulska Wynik 1:0
+czerwony VS niebieski Glowny sedzia Rafał Rutkowski Wynik 1:0
+czarny VS biały Glowny sedzia Rafał Rutkowski Wynik 1:0
+czarny VS niebieski Glowny sedzia Jan Kowalski Wynik 1:0
+biały VS niebieski Glowny sedzia Kamil Stoch Wynik 1:0
+zielony VS czerwony Glowny sedzia Rafał Rutkowski Wynik 1:0
+czarny VS biały Glowny sedzia Natalia Kukulska Wynik 1:0
+zielony VS czarny Glowny sedzia Justyna Harmuczkiewicz Wynik 1:0
+

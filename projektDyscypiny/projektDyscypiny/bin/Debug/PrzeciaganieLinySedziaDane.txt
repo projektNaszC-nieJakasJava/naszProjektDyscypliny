@@ -1,5 +1,3 @@
-Jan;But;1
-Katarzyna;Kocyk;2
-Piotr;Myszkowski;3
-Justyna;Harmuszkiewicz;5
-Małgorzata;Kocur;8
+Justyna;Harmuczkiewicz;1
+Weronika;Rogodźinska;2
+Marta;Wiszowata;3

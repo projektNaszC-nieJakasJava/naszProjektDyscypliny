@@ -10,7 +10,7 @@ namespace projektDyscypiny
     {
         private Druzyna druzyna1;
         private Druzyna druzyna2;
-        private int idMeczu;
+       // private int idMeczu;   //musielismy uzyć innego sposobu po mimo ze do uml dodalismy idMeczu
         private Sedzia sedzia1;
         private Sedzia sedzia2;
         private Sedzia sedzia3;

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -14,6 +15,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -57,32 +63,32 @@
     </ApplicationDefinition>
     <Compile Include="Druzyna.cs" />
     <Compile Include="Mecz.cs" />
-    <Compile Include="PrzeciaganieLiny.xaml.cs">
+    <Compile Include="Lina\PrzeciaganieLiny.xaml.cs">
       <DependentUpon>PrzeciaganieLiny.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sedzia.cs" />
-    <Compile Include="Siatkowka.xaml.cs">
+    <Compile Include="Siatka\Siatkowka.xaml.cs">
       <DependentUpon>Siatkowka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TurniejDwaOgnie.xaml.cs">
+    <Compile Include="Ogien\TurniejDwaOgnie.xaml.cs">
       <DependentUpon>TurniejDwaOgnie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TurniejPrzeciaganieLiny.xaml.cs">
+    <Compile Include="Lina\TurniejPrzeciaganieLiny.xaml.cs">
       <DependentUpon>TurniejPrzeciaganieLiny.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TurniejSiatkowka.xaml.cs">
+    <Compile Include="Siatka\TurniejSiatkowka.xaml.cs">
       <DependentUpon>TurniejSiatkowka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WynikiDwaOgnie.xaml.cs">
+    <Compile Include="Ogien\WynikiDwaOgnie.xaml.cs">
       <DependentUpon>WynikiDwaOgnie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WynikiPrzeciaganieLiny.xaml.cs">
+    <Compile Include="Lina\WynikiPrzeciaganieLiny.xaml.cs">
       <DependentUpon>WynikiPrzeciaganieLiny.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WynikiSiatkowka.xaml.cs">
+    <Compile Include="Siatka\WynikiSiatkowka.xaml.cs">
       <DependentUpon>WynikiSiatkowka.xaml</DependentUpon>
     </Compile>
-    <Page Include="DwaOgnie.xaml">
+    <Page Include="Ogien\DwaOgnie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,7 +104,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DwaOgnie.xaml.cs">
+    <Compile Include="Ogien\DwaOgnie.xaml.cs">
       <DependentUpon>DwaOgnie.xaml</DependentUpon>
     </Compile>
     <Compile Include="GlowneMenu.xaml.cs">
@@ -108,35 +114,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PrzeciaganieLiny.xaml">
+    <Page Include="Lina\PrzeciaganieLiny.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Siatkowka.xaml">
+    <Page Include="Siatka\Siatkowka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TurniejDwaOgnie.xaml">
+    <Page Include="Ogien\TurniejDwaOgnie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TurniejPrzeciaganieLiny.xaml">
+    <Page Include="Lina\TurniejPrzeciaganieLiny.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TurniejSiatkowka.xaml">
+    <Page Include="Siatka\TurniejSiatkowka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WynikiDwaOgnie.xaml">
+    <Page Include="Ogien\WynikiDwaOgnie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WynikiPrzeciaganieLiny.xaml">
+    <Page Include="Lina\WynikiPrzeciaganieLiny.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WynikiSiatkowka.xaml">
+    <Page Include="Siatka\WynikiSiatkowka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,6 +165,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,16 +175,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tloMenu.jpg" />
+    <Resource Include="zdjecia\tloMenu.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tloPrzeciaganieLiny.jpg" />
+    <Resource Include="zdjecia\tloSiatkowka.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Resource Include="tloSiatkowka.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="tloDwaOgnie.jpg" />
+    <Resource Include="zdjecia\tloDwaOgnie.jpg" />
+    <Resource Include="zdjecia\tloPrzeciaganieLiny.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.12.0\build\NUnit.props'))" />
+  </Target>
 </Project>

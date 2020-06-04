@@ -1,0 +1,174 @@
+TURNIEJ
+
+Ranking:
+
+1. chomik ID: 1
+2. kaczka ID: 3
+3. królik ID: 2
+4. mucha ID: 4
+5. koń ID: 5
+6. aaaa ID: 6
+7. vvv ID: 7
+8. bbbbbbb ID: 8
+9. aasdads ID: 9
+10. adsad ID: 10
+11. adsads ID: 11
+12. asdads ID: 12
+
+chomik VS królik sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS kaczka sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS mucha sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS koń sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS aaaa sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS vvv sedzia Marta Wiszowata Wynik 1:0
+chomik VS bbbbbbb sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS aasdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS adsad sedzia Marta Wiszowata Wynik 1:0
+chomik VS adsads sedzia Weronika Rogodźinska Wynik 1:0
+chomik VS asdads sedzia Marta Wiszowata Wynik 1:0
+królik VS kaczka sedzia Weronika Rogodźinska Wynik 1:0
+królik VS mucha sedzia Weronika Rogodźinska Wynik 1:0
+królik VS koń sedzia Marta Wiszowata Wynik 1:0
+królik VS aaaa sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS vvv sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS bbbbbbb sedzia Weronika Rogodźinska Wynik 1:0
+królik VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+królik VS adsad sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS adsads sedzia Marta Wiszowata Wynik 1:0
+królik VS asdads sedzia Marta Wiszowata Wynik 1:0
+kaczka VS mucha sedzia Marta Wiszowata Wynik 1:0
+kaczka VS koń sedzia Weronika Rogodźinska Wynik 1:0
+kaczka VS aaaa sedzia Marta Wiszowata Wynik 1:0
+kaczka VS vvv sedzia Marta Wiszowata Wynik 1:0
+kaczka VS bbbbbbb sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS aasdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS adsad sedzia Marta Wiszowata Wynik 1:0
+kaczka VS adsads sedzia Weronika Rogodźinska Wynik 1:0
+kaczka VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+mucha VS koń sedzia Marta Wiszowata Wynik 1:0
+mucha VS aaaa sedzia Marta Wiszowata Wynik 1:0
+mucha VS vvv sedzia Justyna Harmuczkiewicz Wynik 1:0
+mucha VS bbbbbbb sedzia Marta Wiszowata Wynik 1:0
+mucha VS aasdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+mucha VS adsad sedzia Weronika Rogodźinska Wynik 1:0
+mucha VS adsads sedzia Marta Wiszowata Wynik 1:0
+mucha VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+koń VS aaaa sedzia Weronika Rogodźinska Wynik 1:0
+koń VS vvv sedzia Marta Wiszowata Wynik 1:0
+koń VS bbbbbbb sedzia Marta Wiszowata Wynik 1:0
+koń VS aasdads sedzia Marta Wiszowata Wynik 1:0
+koń VS adsad sedzia Marta Wiszowata Wynik 1:0
+koń VS adsads sedzia Marta Wiszowata Wynik 1:0
+koń VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+aaaa VS vvv sedzia Justyna Harmuczkiewicz Wynik 1:0
+aaaa VS bbbbbbb sedzia Marta Wiszowata Wynik 1:0
+aaaa VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+aaaa VS adsad sedzia Weronika Rogodźinska Wynik 1:0
+aaaa VS adsads sedzia Marta Wiszowata Wynik 1:0
+aaaa VS asdads sedzia Marta Wiszowata Wynik 1:0
+vvv VS bbbbbbb sedzia Marta Wiszowata Wynik 1:0
+vvv VS aasdads sedzia Marta Wiszowata Wynik 1:0
+vvv VS adsad sedzia Marta Wiszowata Wynik 1:0
+vvv VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+vvv VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+bbbbbbb VS aasdads sedzia Marta Wiszowata Wynik 1:0
+bbbbbbb VS adsad sedzia Justyna Harmuczkiewicz Wynik 1:0
+bbbbbbb VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+bbbbbbb VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+aasdads VS adsad sedzia Weronika Rogodźinska Wynik 1:0
+aasdads VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+aasdads VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+adsad VS adsads sedzia Marta Wiszowata Wynik 1:0
+adsad VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+adsads VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS królik sedzia Weronika Rogodźinska Wynik 1:0
+kaczka VS mucha sedzia Marta Wiszowata Wynik 1:0
+chomik VS kaczka sedzia Weronika Rogodźinska Wynik 1:0
+
+TURNIEJ
+
+Ranking:
+
+1. chomik ID: 1
+2. kaczka ID: 3
+3. królik ID: 2
+4. mucha ID: 4
+5. koń ID: 5
+6. aaaa ID: 6
+7. vvv ID: 7
+8. bbbbbbb ID: 8
+9. aasdads ID: 9
+10. adsad ID: 10
+11. adsads ID: 11
+12. asdads ID: 12
+
+chomik VS królik sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS kaczka sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS mucha sedzia Marta Wiszowata Wynik 1:0
+chomik VS koń sedzia Weronika Rogodźinska Wynik 1:0
+chomik VS aaaa sedzia Marta Wiszowata Wynik 1:0
+chomik VS vvv sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS bbbbbbb sedzia Weronika Rogodźinska Wynik 1:0
+chomik VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+chomik VS adsad sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+chomik VS asdads sedzia Marta Wiszowata Wynik 1:0
+królik VS kaczka sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS mucha sedzia Weronika Rogodźinska Wynik 1:0
+królik VS koń sedzia Marta Wiszowata Wynik 1:0
+królik VS aaaa sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS vvv sedzia Marta Wiszowata Wynik 1:0
+królik VS bbbbbbb sedzia Marta Wiszowata Wynik 1:0
+królik VS aasdads sedzia Marta Wiszowata Wynik 1:0
+królik VS adsad sedzia Marta Wiszowata Wynik 1:0
+królik VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+królik VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS mucha sedzia Marta Wiszowata Wynik 1:0
+kaczka VS koń sedzia Marta Wiszowata Wynik 1:0
+kaczka VS aaaa sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS vvv sedzia Marta Wiszowata Wynik 1:0
+kaczka VS bbbbbbb sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+kaczka VS adsad sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+kaczka VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+mucha VS koń sedzia Justyna Harmuczkiewicz Wynik 1:0
+mucha VS aaaa sedzia Justyna Harmuczkiewicz Wynik 1:0
+mucha VS vvv sedzia Marta Wiszowata Wynik 1:0
+mucha VS bbbbbbb sedzia Weronika Rogodźinska Wynik 1:0
+mucha VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+mucha VS adsad sedzia Weronika Rogodźinska Wynik 1:0
+mucha VS adsads sedzia Marta Wiszowata Wynik 1:0
+mucha VS asdads sedzia Marta Wiszowata Wynik 1:0
+koń VS aaaa sedzia Marta Wiszowata Wynik 1:0
+koń VS vvv sedzia Marta Wiszowata Wynik 1:0
+koń VS bbbbbbb sedzia Justyna Harmuczkiewicz Wynik 1:0
+koń VS aasdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+koń VS adsad sedzia Marta Wiszowata Wynik 1:0
+koń VS adsads sedzia Marta Wiszowata Wynik 1:0
+koń VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+aaaa VS vvv sedzia Weronika Rogodźinska Wynik 1:0
+aaaa VS bbbbbbb sedzia Justyna Harmuczkiewicz Wynik 1:0
+aaaa VS aasdads sedzia Marta Wiszowata Wynik 1:0
+aaaa VS adsad sedzia Marta Wiszowata Wynik 1:0
+aaaa VS adsads sedzia Weronika Rogodźinska Wynik 1:0
+aaaa VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+vvv VS bbbbbbb sedzia Weronika Rogodźinska Wynik 1:0
+vvv VS aasdads sedzia Marta Wiszowata Wynik 1:0
+vvv VS adsad sedzia Weronika Rogodźinska Wynik 1:0
+vvv VS adsads sedzia Weronika Rogodźinska Wynik 1:0
+vvv VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+bbbbbbb VS aasdads sedzia Weronika Rogodźinska Wynik 1:0
+bbbbbbb VS adsad sedzia Marta Wiszowata Wynik 1:0
+bbbbbbb VS adsads sedzia Weronika Rogodźinska Wynik 1:0
+bbbbbbb VS asdads sedzia Weronika Rogodźinska Wynik 1:0
+aasdads VS adsad sedzia Marta Wiszowata Wynik 1:0
+aasdads VS adsads sedzia Justyna Harmuczkiewicz Wynik 1:0
+aasdads VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+adsad VS adsads sedzia Marta Wiszowata Wynik 1:0
+adsad VS asdads sedzia Justyna Harmuczkiewicz Wynik 1:0
+adsads VS asdads sedzia Marta Wiszowata Wynik 1:0
+chomik VS królik sedzia Marta Wiszowata Wynik 1:0
+kaczka VS mucha sedzia Marta Wiszowata Wynik 1:0
+chomik VS kaczka sedzia Weronika Rogodźinska Wynik 1:0
+

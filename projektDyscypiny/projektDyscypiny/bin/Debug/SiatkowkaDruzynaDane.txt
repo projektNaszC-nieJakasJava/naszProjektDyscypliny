@@ -1,4 +1,5 @@
-adsads;1
-dasads;3
-asd;4
-fdg;5
+zielony;1
+czerwony;2
+czarny;3
+biały;4
+niebieski;5
